@@ -6,7 +6,7 @@
     <artifactId>spring-boot-springdoc-2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-springdoc-2</name>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <description>Project for Springdoc integration</description>
 
     <parent>
