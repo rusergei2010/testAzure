@@ -6,7 +6,7 @@
     <artifactId>spring-boot-springdoc-2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-springdoc-2</name>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <description>Project for Springdoc integration</description>
 
     <parent>
@@ -113,7 +113,7 @@
                     <runtime>
                         <os>Linux</os>
                         <javaVersion>Java 17</javaVersion>
-                        <webContainer>Tomcat 10.0</webContainer>
+<!--                        <webContainer>Tomcat 10.0</webContainer>-->
                     </runtime>
                     <deployment>
                         <resources>
