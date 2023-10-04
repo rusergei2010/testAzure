@@ -66,5 +66,5 @@ stages:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
               appName: $(webAppName)
-              package: '$(Pipeline.Workspace)/drop/$(artifactName).war'
+              package: '$(Pipeline.Workspace)/drop/target/$(artifactName).war'
               deployToSlotOrASE: false # Deploy to the main site
