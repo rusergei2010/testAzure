@@ -72,5 +72,9 @@ stages:
               
           - script: |
               # Copy ROOT.war to /home/site/wwwroot/
-              cp $(Pipeline.Workspace)/drop/**/target/ROOT.war /home/site/wwwroot/
+              ls $(Pipeline.Workspace)
+              ls $(Pipeline.Workspace)/1
+              ls $(Pipeline.Workspace)/1/a
+              ls $(Pipeline.Workspace)/**/
+              cp $(Pipeline.Workspace)/1/**/target/ROOT.war /home/site/wwwroot/
             displayName: 'Copy ROOT.war to /home/site/wwwroot/'
