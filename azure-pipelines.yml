@@ -69,3 +69,8 @@ stages:
               appType: webAppLinux
               appName: $(webAppName)
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
+              
+          - script: |
+              # Copy ROOT.war to /home/site/wwwroot/
+              cp $(Pipeline.Workspace)/drop/**/target/ROOT.war /home/site/wwwroot/
+            displayName: 'Copy ROOT.war to /home/site/wwwroot/'
