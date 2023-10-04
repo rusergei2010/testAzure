@@ -46,7 +46,6 @@ public class BookController {
         return repository.getBooks();
     }
 
-
     @GetMapping("/read")
     public String readBook() {
         return "I am reading my book";
